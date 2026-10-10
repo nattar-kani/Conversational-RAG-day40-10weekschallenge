@@ -1,0 +1,45 @@
+GHG emissions are commonly reported as carbon dioxide equivalent, abbreviated as CO2e. CO2e provides a common unit for comparing the climate impact of different greenhouse gases. The calculation uses the amount of each greenhouse gas emitted and its global warming potential.
+
+Scope 1 emissions are direct greenhouse gas emissions from sources that are owned or controlled by an organization. Examples include fuel combustion in company-owned boilers, furnaces, generators, and vehicles. Fugitive emissions from refrigerant leakage can also be included in Scope 1.
+
+Scope 2 emissions are indirect greenhouse gas emissions associated with the generation of purchased electricity, steam, heating, and cooling consumed by an organization. Electricity consumption is commonly reported in kWh and can be converted into emissions using an appropriate electricity emission factor.
+
+Scope 3 emissions are other indirect emissions occurring in an organization's value chain. Examples include purchased goods and services, capital goods, business travel, employee commuting, transportation, waste generated in operations, and use of sold products.
+
+The basic activity-data approach for calculating emissions is: emissions = activity data × emission factor. For example, diesel consumption can be multiplied by a diesel emission factor to estimate greenhouse gas emissions from fuel combustion.
+
+An emission factor represents the amount of greenhouse gas emissions associated with a unit of activity. Common units include kg CO2e per litre of fuel, kg CO2e per kWh of electricity, kg CO2e per tonne-kilometre of freight, and kg CO2e per kilogram of material.
+
+Global warming potential, or GWP, is used to express the climate impact of a greenhouse gas relative to carbon dioxide. GWP100 refers to the global warming potential measured over a 100-year time horizon. Methane and nitrous oxide have higher GWP100 values than carbon dioxide.
+
+Carbon dioxide is represented by the chemical formula CO2. Methane is represented by CH4, while nitrous oxide is represented by N2O. These gases have different global warming potentials and should not be treated as having the same climate impact per kilogram emitted.
+
+Stationary combustion refers to fuel combustion in fixed equipment such as boilers, furnaces, generators, and other stationary machinery. Fuel consumption may be recorded in litres, kilograms, cubic metres, or energy units depending on the fuel and measurement system.
+
+Mobile combustion refers to fuel combustion in transportation equipment such as cars, trucks, buses, ships, and aircraft. Activity data can include litres of diesel or petrol consumed, distance travelled, or fuel purchase records.
+
+For diesel combustion, an organization may calculate emissions by multiplying litres of diesel consumed by the applicable diesel emission factor. The selected emission factor should match the required reporting methodology, fuel type, geography, and reporting period.
+
+For purchased electricity, electricity consumption is normally measured in kilowatt-hours, written as kWh. Emissions can be estimated by multiplying electricity consumption in kWh by an electricity emission factor expressed in kg CO2e/kWh.
+
+A tonne of carbon dioxide equivalent is abbreviated as tCO2e. One tonne equals 1,000 kilograms. Therefore, an emissions result reported in kg CO2e can be converted to tCO2e by dividing the value by 1,000.
+
+The Greenhouse Gas Protocol provides widely used accounting standards for corporate greenhouse gas inventories. It categorizes corporate emissions into Scope 1, Scope 2, and Scope 3 and provides guidance for measuring and reporting emissions.
+
+IPCC stands for the Intergovernmental Panel on Climate Change. IPCC assessment reports provide scientific assessments of climate change and include information used in greenhouse gas accounting, including global warming potential values.
+
+DEFRA, the UK Department for Environment, Food and Rural Affairs, publishes greenhouse gas conversion factors that can be used to estimate emissions from activities such as fuel use, electricity, transport, and other sources. Conversion factors should be selected based on the relevant reporting year and methodology.
+
+An activity dataset may contain fields such as facility_id, fuel_type, fuel_quantity, fuel_unit, electricity_kwh, distance_km, emission_factor, emission_factor_unit, reporting_year, and source. Maintaining the unit and source of an emission factor is important for auditability.
+
+Unit conversion is an important part of emissions calculations. For example, litres of diesel, kilograms of fuel, megawatt-hours of electricity, and tonnes of material may need to be converted into the units expected by an emission factor before multiplication.
+
+If 1,000 litres of diesel are consumed and the applicable emission factor is 2.68 kg CO2e per litre, estimated emissions are 2,680 kg CO2e, or 2.68 tCO2e. The calculation is activity data multiplied by the emission factor.
+
+If an organization consumes 10,000 kWh of electricity and the applicable emission factor is 0.7 kg CO2e per kWh, estimated emissions are 7,000 kg CO2e, or 7 tCO2e.
+
+An emissions inventory should retain the source of each emission factor, the factor value, the unit, the reporting year, and the calculation methodology. This information helps reviewers reproduce and audit the reported emissions.
+
+Emission factors can differ between countries, electricity grids, fuel types, methodologies, and reporting years. Therefore, using an emission factor from a different geography or reporting period without checking its applicability can introduce errors into an emissions inventory.
+
+For a reliable GHG inventory, activity data and emission factors should be traceable to their original records or published sources. Supporting evidence may include fuel invoices, electricity bills, meter readings, transport records, procurement data, and official emission-factor databases.
