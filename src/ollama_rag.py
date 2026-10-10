@@ -16,7 +16,7 @@ def resolve_query(
     if not history:
         return question
 
-    recent_history = history[-3:1]
+    recent_history = history[-3:]
 
     history_text = "\n".join(
         f"User: {turn['question']}\n"
@@ -127,29 +127,7 @@ Current question:
 Answer:
 """
 
-    response = client.chat(
-        model="qwen2.5:1.5b",
-        messages=[
-            {
-                "role": "system",
-                "content": (
-                    "You are a helpful RAG assistant. "
-                    "Answer using only the supplied sources. "
-                    "Use conversation history to understand "
-                    "the user's question, but cite the current "
-                    "sources for factual claims."
-                ),
-            },
-            {
-                "role": "user",
-                "content": prompt,
-            },
-        ],
-        options={"temperature": 0},
-    )
-
-    FALLBACK_ANSWER = (
-    "I don't have enough information in the provided context.")
+    FALLBACK_ANSWER = ("I don't have enough information in the provided context.")
 
     MIN_SIMILARITY = 0.35
 
@@ -170,6 +148,27 @@ Answer:
         print("Guardrail: Retrieved evidence may be insufficient.")
         memory.add_turn(question, FALLBACK_ANSWER)
         return FALLBACK_ANSWER    
+
+    response = client.chat(
+        model="qwen2.5:1.5b",
+        messages=[
+            {
+                "role": "system",
+                "content": (
+                    "You are a helpful RAG assistant. "
+                    "Answer using only the supplied sources. "
+                    "Use conversation history to understand "
+                    "the user's question, but cite the current "
+                    "sources for factual claims."
+                ),
+            },
+            {
+                "role": "user",
+                "content": prompt,
+            },
+        ],
+        options={"temperature": 0},
+    )
 
     answer = response["message"]["content"]
 

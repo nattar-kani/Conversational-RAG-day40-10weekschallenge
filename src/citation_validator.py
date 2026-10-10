@@ -1,19 +1,14 @@
+
 import re
 
 
 def validate_citation_numbers(answer, source_mapping):
-    cited_numbers = re.findall(
-        r"\[Source (\d+)\]",
-        answer,
-    )
+    cited_numbers = re.findall(r"\[Source (\d+)\]", answer)
 
-    invalid_citations = []
-
-    for number in cited_numbers:
-        citation_number = int(number)
-
-        if citation_number not in source_mapping:
-            invalid_citations.append(citation_number)
+    invalid_citations = [
+        int(number)
+        for number in cited_numbers
+        if int(number) not in source_mapping
+    ]
 
     return invalid_citations
-
