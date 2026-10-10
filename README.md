@@ -37,8 +37,11 @@ GroundTruth combines hybrid retrieval, local LLM inference, conversation memory,
 
 The repository includes two recordings demonstrating the application.
 
-- **UI walkthrough:** `recordings/ui.mp4`
-- **Conversation demo:** `recordings/conversation.mp4`
+- **UI walkthrough:** 
+![User interface](recordings/ui.gif)
+
+- **Conversation demo:** 
+![Demo](recordings/conversation.gif)
 
 These recordings demonstrate the interface and conversational workflow without requiring a permanently hosted inference service.
 
